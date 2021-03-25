@@ -1,89 +1,30 @@
 /************ GRUNDGERUEST ************/
-body {margin: 0; padding: 0; height: 100%; text-align: center; font-family: 'Piazzolla', serif; font-size: 18px;}
+body {margin: 0; padding: 0; height: 100%}
 section {min-height: 100vh;}
-a {text-decoration: none; color: black;}
 
-p {color: #3e51b8;}
+hr {width: 30px; height: 4px; background: black; border: 0; margin: 0 auto 40px auto;}
 
-hr {width: 30px; height: 3px; background: #494949; border: 0; margin: 0 auto 40px auto;}
-
-#logo, li, .fa-bars {transition: all 300ms; -webkit-transition: all 300ms; -moz-transition: all 300ms; list-style-type: none;}
-.fa-bars {display: none;}
+li {transition: all 300ms; -webkit-transition: all 300ms; -moz-transition: all 300ms;}
 
 /************ HEAD ************/
 header {
-	height: 65px;
-	width: 100%;
-	top: 0;
-	margin: 0;
-	left: 0;
-	background-color: #e8e6e6;
-	box-shadow: 0 3px 5px rgba(232, 230, 230, 0.3);
-	position: fixed;
-	z-index: 1;
+
 }
 
-#logo {
-	width: 130px;
-	height: 55px;
-	float: left;
-	margin: 2px 0 0 25px;
-}
-
-#logo:hover {
-	opacity: 0.5;
-}
-
-#logo img {
-	width: 100%;
-}
-
-#navi {
-	float: right;
-	margin: 2px 25px 0 0;
-}
-
-#navi ul a li {
-	float: left;
-	margin-left: 25px;
-}
-
-#navi ul a li:hover {
-	padding-top: 5px;
-}
 
 /************ HOME ************/
-#home {
-	background: url(../Bilder/background.jpeg);
-	background-position: center center;
-	background-size: cover;
-	background-attachment: fixed;
-}
 
-#home h1 {
-	padding-top: 8%;
-	margin: 0 auto 0 auto;
-	font-size: 110px;
+#home {
+
 }
 
 
 /************ PROJECT v1.0 ************/
 #project1 {
-	background-color: #bad4c1;
-	margin: 0 auto 0 auto;
+	background-color: #d1cfcf;
 }
 
-#project1 h2 {
-	padding-top: 8%;
-	margin-bottom: 5px;
-	margin: 0 auto 0 auto;
-	font-size: 70px;
-}
-
-#project1 hr {
-	margin-bottom: 5%;
-}
-
+/*
 input {
 	font-size: 15px;
 	margin-bottom: 5px;
@@ -109,143 +50,27 @@ input[type=text]:focus {
 .button:hover {
 	background-color: #494949;
 	color: #f0f0f0;
-}
-
-::-webkit-input-placeholder {color: #999999;}
-::-moz-placeholder {color: #999999;}
-:-ms-input-placeholder {color: #999999;}
-:-moz-placeholder {color: #999999;}
-
+}*/
 
 
 /************ PROJECT v2.0 ************/
 #project2 {
-	background-color: white;
+
 }
 
-#project2 h2 {
-	padding-top: 8%;
-	margin: 0 auto 0 auto;
-	font-size: 70px;
-}
 
 /************ FOOTER ************/
 footer {
-	margin-top: 0;
-	height: 65px;
-	width: 100%;
-	background-color: #e8e6e6;
+
 }
 
-footer p {
-	padding-top: 20px;
-	font-size: 15px;
-	color: black;
-}
 
 /*Tablets*/
 @media screen and (max-width: 1024px) {
-	header {
-		height: auto;
-	}
-	
-	#logo {
-		width: 100px;
-		margin-top: 5px;
-	}
-	
-	header nav {
-		margin-top: 0;
-	}
-	
-	header nav ul li {
-		font-size: 12px;
-	}
-	
-	#home h1 {
-		font-size: 90px;
-		margin-top: 22px;
-	}
-	
-	#home h2 {
-		font-size: 22px;
-	}
-	
-	#project1, #project2 {
-		width: auto;
-	}
-	
-	form input, form textarea {
-		width: 60vh;
-	}
-	
-	.button {
-		width: 62vh;
-	}
-	
+
 }
 
 /*Mobile*/
 @media screen and (max-width: 480px) {
-	#logo {
-		width: 90px;
-		margin-left: 30px;
-	}
-	
-	header nav {
-		margin: 0;
-		float: none;
-	}
-	
-	.fa-bars {
-		font-size: 17px;
-		display: inline-block;
-		width: 100%;
-		cursor: pointer;
-		text-align: right;
-		float: right;
-		margin: -25px 30px 0 0;
-	}
-	
-	.fa-bars:hover {
-		opacity: 0.5;
-	}
-	
-	header nav ul {
-		height: 0;
-		overflow: hidden;
-		margin: 0;
-		padding: 0;
-		width: 100%;
-	}
-	
-	header nav ul.open {
-		height: auto;
-	}
-	
-	header nav ul li {
-		width: 100vh;
-		padding: 5px 0;
-		margin: 0;
-		font-size: 11px;
-		border-top: 1px solid #dddddd;
-	}
-	
-	header nav ul li:hover {
-		background-color: #eeeeee;
-	}
-	
-	#home h1 {
-		font-size: 60px;
-		margin-top: 200px;
-	}
-	
-	form input, form textarea {
-		width: 70vh;
-	}
-	
-	.button {
-		width: 72vh;
-	}
-	
+
 }
