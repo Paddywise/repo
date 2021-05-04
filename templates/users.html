@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+		<link href="{{ url_for('static', filename='css/bootstrap.css') }}" rel="stylesheet" />
+		<link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" />
+		<script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+  </head>
+  <body>
+    <table border="1">
+      {% for user in userDetails %}
+      <tr>
+        <td>{{user[1]}}</td>
+        <td>{{user[2]}}</td>
+      </tr>
+      {% endfor %}
+    </table>
+
+    <form class="button btn btn-primary" action="/" method="get">
+      <input type="submit" name="back" value="Back">
+    </form>
+  </body>
+</html>
